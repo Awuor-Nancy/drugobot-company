@@ -1,5 +1,3 @@
-
-
 * {
     margin: 0;
     padding: 0;
@@ -25,10 +23,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 6px;
-  background-color: #f89999;
+  padding: 2px 13px;
+  background-color: #d87f07;
   position: fixed;
-  top: 0;
+  /* top: 0; */
   width: 100%;
 }
 
@@ -43,7 +41,7 @@ body {
 }
 
 .navbar-links li a {
-  color: #000;
+  color: #fff;
   text-decoration: none;
   font-size: 18px;
   transition: all 0.3s;
@@ -51,15 +49,15 @@ body {
 }
 
 .navbar-links li a:hover {
-  background: linear-gradient(45deg, #2979ff, #eae3e2);
+  background: linear-gradient(45deg, #7aa600, #eae3e2);
   padding: 8px 15px;
   border-radius: 20px;
 }
 
 .btn {
-  display: block; /* Show the button on all screen sizes */
+  display: block; 
   text-align: center;
-  margin-top: 20px; /* Adjust as needed */
+  margin-top: 20px; 
   width: auto;
   position: relative;
   z-index: 2;
@@ -73,7 +71,7 @@ body {
 
 /* Logo Styles */
 .navbar img {
-    color: #000;
+    /* color: #000; */
     font-weight: 900;
     cursor: pointer;
     width: 145px;
@@ -90,11 +88,11 @@ body {
 /* Default display for nav links */
 .navbar-links {
   display: flex;
-  justify-content: flex-end; /* Adjust alignment as needed */
+  justify-content: flex-end; 
 }
 
 .btn {
-  display: none; /* Hide the button initially */
+  display: none; 
 }
 
 /* Media query for smaller screens */
@@ -106,13 +104,13 @@ body {
   .navbar-links {
     display: none;
     flex-direction: column;
-    background-color: #f89999; /* Example background color */
-    padding: 20px; /* Example padding */
+    background-color: #d87f07;
+    padding: 20px;
     position: absolute;
-    top: calc(100% + -2px); /* Position below the navbar */
+    top: calc(100% + -2px);
     left: 0;
     right: 0;
-    z-index: 1; /* Ensure menu is on top */
+    z-index: 1;
   }
 
   .navbar-links.active {
@@ -122,23 +120,19 @@ body {
   .hamburger-btn {
     display: block;
     position: absolute;
-    top: 10px; /* Adjust as needed */
-    right: 10px; /* Adjust as needed */
-    z-index: 2; /* Ensure hamburger is on top */
+    top: 10px; 
+    right: 10px;
+    z-index: 2; 
   }
 
   .btn {
-    display: block; /* Show the button on smaller screens */
-    text-align: center; /* Center align the button */
-    margin-top: 70px; /* Move the button away from the menu */
-    width: auto; /* Reset width */
+    display: block;
+    text-align: center; 
+    margin-top: 70px; 
+    width: auto;
     position: relative;
     z-index: -20000;
   }
-}
-
-span{
-  color: #ef571a;
 }
 
 /* Button Styles */
@@ -146,8 +140,8 @@ span{
   color: #fff;
   font-weight: bold;
   display: inline-block;
-  padding: 12px 25px; /* Adjusted padding */
-  background-color:#2979ff;
+  padding: 12px 25px; 
+  background-color: #7aa600;
   border-radius: 20px;
   border-top-left-radius: 0;
   transition: 0.5s;
@@ -156,7 +150,7 @@ span{
 }
 
 .image-container{
-  display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -170,14 +164,15 @@ span{
 .row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; /* Distribute items evenly */
+  justify-content: space-between;
+   
 }
 
 /* Column Styles */
 .col-1,
 .col-2 {
   flex-basis: calc(50% - 20px); 
-  margin-bottom: 10px;
+  margin-top: 80px;
   padding: 0 10px; 
 }
 
@@ -200,14 +195,14 @@ span{
   }
 }
 
-h3 {
+/* h3 {
   color: #ef571a;
   font-size: 14px;
   text-transform: uppercase;
   margin-bottom: 15px;
   letter-spacing: 3px;
   animation: fadeIn 1.5s ease-in-out;
-}
+} */
 
 @keyframes fadeIn {
   from {
@@ -266,7 +261,7 @@ p {
 .social-icons a {
   font-size: 40px;
   margin: auto;
-  color: rgb(243, 65, 65);
+  color: #d87f07;
   animation: infinite pulse 2s ease-in-out;
 }
 
@@ -307,6 +302,7 @@ p {
 #about {
   padding: 50px 0;
   background-color: #f4f4f4;
+  color: #000;
 }
 
 .container {
@@ -342,12 +338,13 @@ h2 {
     margin: 0 auto;
     padding: 20px;
     align-items: center;
+    
 }
 
 /* Service section styles */
 #services {
     padding: 50px 0;
-    background-color: #f4f4f4;
+    background-color: #7aa600;
 }
 
 .container {
@@ -406,7 +403,7 @@ p {
 /* Gallery styles */
 #gallery {
   padding: 50px 0;
-  background-color: #f4f4f4;
+  background-color: #fff;
 }
 
 .container {
@@ -496,7 +493,7 @@ h2 {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: #333;
+  background-color: #7aa600;;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
@@ -512,6 +509,9 @@ h2 {
     width: calc(100% - 20px);
     margin: 0 10px 20px;
   }
+}
+.dr{
+  background-color: #fff;
 }
 
 
@@ -530,39 +530,40 @@ h2 {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 40px;
-  width: calc(50% - 20px); /* Two drugs per row */
+  width: calc(50% - 20px); 
 }
 
 .drug-info {
   padding: 20px;
-  background-color: #f4f4f4;
+  background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
+  
 }
 
 .drug-info h3 {
-  color: #333;
+  color: #7aa600;
   margin-bottom: 10px;
   font-size: 24px;
 }
 
 .drug-info p {
-  color: #555;
+  color: #000;
   font-size: 16px;
   line-height: 1.5;
 }
 
 .drug-image {
-  margin-top: 20px; /* Add some space between text and image */
+  margin-top: 20px;
   display: flex;
   justify-content: center;
 }
 
 .drug-image img {
-  width: 100%; /* Ensure all images take up the full width */
-  height: 200px; /* Set a specific height for uniformity */
-  object-fit: cover; /* Maintain aspect ratio without stretching */
+  width: 100%; 
+  height: 200px; 
+  object-fit: cover; 
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
@@ -575,7 +576,7 @@ h2 {
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
   .drug {
-    width: 100%; /* One drug per row on smaller screens */
+    width: 100%; 
   }
 }
 
@@ -620,12 +621,12 @@ h2 {
 }
 
 .contact-form textarea {
-  height: 150px; /* Adjust the height as needed */
+  height: 150px;
 }
 
 .contact-form button {
-  width: 100%;
-  background-color: #555;
+  width: 20%;
+  background-color: #d87f07;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -634,7 +635,7 @@ h2 {
 }
 
 .contact-form button:hover {
-  background-color: #333;
+  background-color: #d87f07;
 }
 
 /* Media query for smaller screens */
@@ -657,7 +658,7 @@ h2 {
 
 /* Overall Footer Style */
 .footer {
-  background-color: #1e1e1e;
+  background-color: #d87f07;
   color: #fff;
   padding: 30px 0;
   font-family: 'Open Sans', sans-serif;
