@@ -11,7 +11,7 @@ html{
 
 body {
   font-family: Arial, sans-serif;
-  background: linear-gradient(#ffffff03, #00020fcd), url('no\ drug.png');
+  background-color: #fff;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -438,7 +438,7 @@ h2 {
 
 /* Adjustments to the partners section */
 #partners {
-  background-color: #f9f9f9;
+  background-color: #f9f9;
   padding: 50px 0;
 }
 
@@ -446,6 +446,7 @@ h2 {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  
 }
 
 h2 {
@@ -459,6 +460,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+ 
 }
 
 .partner {
@@ -468,6 +470,7 @@ h2 {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+ 
 }
 
 .partner img {
