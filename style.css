@@ -194,15 +194,6 @@ body {
   }
 }
 
-/* h3 {
-  color: #ef571a;
-  font-size: 14px;
-  text-transform: uppercase;
-  margin-bottom: 15px;
-  letter-spacing: 3px;
-  animation: fadeIn 1.5s ease-in-out;
-} */
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -246,7 +237,7 @@ p {
 
 /* Chef Image Styles */
 .chef-img {
-  width: 100%;
+  width: 70%;
   margin-top: 30px;
 }
 
@@ -302,6 +293,7 @@ p {
   padding: 50px 0;
   background-color: #f4f4f4;
   color: #000;
+  height: 50vh;
 }
 
 .container {
@@ -734,7 +726,7 @@ h2 {
 }
 
 .footer-social a {
-  color: orangered;
+  color: #fff;
   font-size: 24px;
   text-decoration: none;
   transition: color 0.2s ease-in-out;
