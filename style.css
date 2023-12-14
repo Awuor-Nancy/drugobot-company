@@ -750,28 +750,15 @@ h2 {
   border-radius: 5px;
   padding: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  max-width: 100vw;
-  width: calc(100vw - 40px); /* Adjust based on desired margin */
-}
-
-@media only screen and (max-width: 768px) {
-  .chatbot-wrapper {
-    width: 90%; /* Adjust based on desired width on smaller screens */
-  }
+  width: 230px; 
 }
 
 /* Chatbot icon styles */
 .chatbot-icon {
   display: inline-block;
   margin-right: 10px;
-  font-size: 2.0em; /* Adjust size for smaller screens */
-  color: #d87f07;
-}
-
-@media only screen and (max-width: 480px) {
-  .chatbot-icon {
-    display: none; /* Optionally hide icon on very small screens */
-  }
+  font-size: 3.0em;
+  color: #d87f07; 
 }
 
 /* Chatbot title styles */
@@ -785,7 +772,7 @@ h1 {
 /* Chatbot text styles */
 p {
   margin-bottom: 10px;
-  font-size: 0.8em; /* Adjust size for smaller screens */
+  font-size: 0.8em;
   color: #333;
 }
 
@@ -797,11 +784,11 @@ p {
 /* Message input styles */
 #chatbot-form input {
   width: 100%;
-  padding: 10px; /* Adjust padding for smaller screens */
+  padding: 15px;
   border: 1px solid #fff;
   border-radius: 3px;
   background-color: #fff;
-  color: #000;
+  color: #fff;
 }
 
 /* Chatbot response styles */
@@ -810,9 +797,10 @@ p {
   border-radius: 3px;
   background-color: #fff;
   font-family: sans-serif;
-  font-size: 0.9em; /* Adjust size for smaller screens */
+  font-size: 0.9em;
   color: #000;
 }
+
 /* blog content */
 h1 {
   text-align: center;
