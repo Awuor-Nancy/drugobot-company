@@ -751,14 +751,14 @@ h2 {
   border-radius: 5px;
   padding: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 300px; 
+  width: 230px; 
 }
 
 /* Chatbot icon styles */
 .chatbot-icon {
   display: inline-block;
   margin-right: 10px;
-  font-size: 3.5em;
+  font-size: 3.0em;
   color: #d87f07; 
 }
 
@@ -785,10 +785,11 @@ p {
 /* Message input styles */
 #chatbot-form input {
   width: 100%;
-  padding: 5px;
+  padding: 15px;
   border: 1px solid #fff;
   border-radius: 3px;
-  background-color: #7aa600;
+  background-color: #fff;
+  color: #fff;
 }
 
 /* Chatbot response styles */
@@ -840,6 +841,13 @@ a {
 
 a:hover {
   color: #4285f4;
+
+}
+.submit{
+  padding: 15px;
+  width: 100px;
+  margin-top: 20px;
+  background-color: #d87f07;
 }
 
 footer {
