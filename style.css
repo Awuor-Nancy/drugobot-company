@@ -800,3 +800,58 @@ p {
   font-size: 0.9em;
   color: #000;
 }
+
+/* blog content */
+h1 {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+p {
+  margin-bottom: 10px;
+  font-size: 1em;
+  color: #333;
+}
+
+ul {
+  margin-top: 5px;
+  padding-left: 15px;
+  list-style: circle;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #4285f4;
+}
+
+footer {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+}
+
+/* Blog content styles */
+.blog-content {
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px
+}
