@@ -1,43 +1,31 @@
-// // User input
-// const userInput = prompt("Hi there! How can I help you today?");
+document.addEventListener('DOMContentLoaded', function() {
+  const icon = document.querySelector('.chatbot-icon');
+  const content = document.querySelector('.chatbot-content');
+  const chatbotResponse = document.querySelector('#chatbot-response');
+  const form = document.getElementById('chatbot-form');
 
-// // Non-judgmental response based on user input
-// let response;
-// switch (userInput.toLowerCase()) {
-//   case "feeling cravings":
-//     response = "Cravings are a common challenge in recovery. Remember, you're not alone. Here are some resources to help you cope:";
-//     break;
-//   case "struggling with recovery":
-//     response = "Recovery is a journey, not a destination. Don't be discouraged by setbacks. I'm here for you. Tell me more about your struggles.";
-//     break;
-//   case "seeking help":
-//     response = "It's great that you're seeking help. You're making a positive choice. I can offer resources and support, but for professional guidance, consider reaching out to one of these hotlines:";
-//     break;
-//   default:
-//     response = "I'm still under development, but I'm here to listen. Tell me more about what you're going through.";
-//     break;
-// }
+  icon.addEventListener('click', function() {
+    content.style.display = (content.style.display === 'none') ? 'block' : 'none';
+  });
 
-// // Provide resources based on the user's needs
-// let resources = "";
-// switch (userInput.toLowerCase()) {
-//   case "feeling cravings":
-//     resources += "- Deep breathing exercises: ";
-//     resources += "https://www.webmd.com/balance/stress-management/stress-relief-breathing-techniques";
-//     resources += "\n- Mindfulness meditation: ";
-//     resources += "https://www.headspace.com/";
-//     break;
-//   case "struggling with recovery":
-//     resources += "- Support groups: ";
-//     resources += "https://na.org/";
-//     resources += "\n- Online forums: ";
-//     resources += "https://drugs-forum.com/";
-//     break;
-//   case "seeking help":
-//     resources += "- SAMHSA National Helpline: 1-800-662-HELP (4357)";
-//     resources += "\n- The Recovery Village: https://www.therecoveryvillage.com/";
-//     break;
-// }
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const userInput = document.getElementById('message').value.toLowerCase().trim();
 
-// // Display the response and resources (if any) to the user
-// alert(response + "\n\n" + resources);
+    if (userInput === 'hello') {
+      const responses = [
+        "You're not alone in this journey. You are stronger than you think.",
+        "Every step you take is a step towards a healthier and brighter future.",
+        "Seeking help is a sign of strength. Keep going!"
+      ];
+      const randomResponse = responses[Math.floor(Math.random() * responses.length)];
+      
+      const chatbotMessage = document.createElement('div');
+      chatbotMessage.classList.add('chatbot-message');
+      chatbotMessage.textContent = randomResponse;
+      chatbotResponse.appendChild(chatbotMessage);
+    }
+
+    document.getElementById('message').value = '';
+  });
+});
