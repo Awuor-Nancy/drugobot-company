@@ -750,7 +750,7 @@ h2 {
   right: 20px;
   z-index: 1000;
   font-family: Arial, sans-serif;
-  /* background-color: #fff; */
+  background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 5px;
   /* max-width: 200px; */
